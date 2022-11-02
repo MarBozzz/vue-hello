@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/vue@3"></script>
+  <title>Document</title>
+</head>
+<body>
+
+
+  <div id="app">
+
+    <h1 v-bind:class="myClass">{{messaggio}}</h1>
+    <button @click = "capitalize()">Capitalize</button>
+    <h2 v-bind:class="myClassDue">{{messaggioDue}}</h2>
+    <button @click = uppercase()>Uppercase</button>
+    <h3 v-bind:class="myClassTre">{{messaggioTre}}</h3>
+    <button @click = purple()>Purple</button><br><br>
+
+    <!-- cambio l'immagine tramite methods -->
+    <img v-bind:src="percorsoImg"  alt=""><br>
+    <button @click="changePic('./img/05.jpg')">Cambia l'immagine</button>
+
+    <button @click:v-show:src="percorsoImg">Nascondi immagine</button>
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>

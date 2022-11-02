@@ -1,0 +1,21 @@
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.blue {
+  color: blue;
+}
+.purple {
+  color: purple;
+}
+.text-cap {
+  text-transform: capitalize;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.nascondi-mostra{
+  
+}

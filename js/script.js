@@ -12,6 +12,8 @@ const {createApp} = Vue;
 createApp ({
   data(){
     return {
+      imgShow: true,
+      textShow: false,
       messaggio : 'ciao starting Blue',
       messaggioDue : 'ciao starting green',
       messaggioTre : 'ciao starting red',
@@ -19,7 +21,6 @@ createApp ({
       myClassDue : 'green',
       myClassTre : 'red',
       percorsoImg : './img/01.jpg',
-      myClassQuattro : 'nascondi-mostra'
     }
   },
   methods: {
@@ -36,7 +37,8 @@ createApp ({
       this.percorsoImg=pic
     },
     hideAndSeek(){
-      this.isClicked
+      this.imgShow = !this.imgShow;
+      this.textShow = !this.textShow;      
     }
   }
 }).mount('#app');

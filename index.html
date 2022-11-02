@@ -21,19 +21,14 @@
     <button @click = purple()>Purple</button><br><br>
 
     <!-- cambio l'immagine tramite methods -->
-    <img v-bind:src="percorsoImg"  alt=""><br>
+    <img v-bind:src="percorsoImg" v-show="imgShow" alt=""><br>
+    <p v-show="textShow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident laboriosam quod ullam magni est molestias quibusdam fuga. Illo, beatae!</p>
     <button @click="changePic('./img/05.jpg')">Cambia l'immagine</button>
 
-    <button @click:v-show:src="percorsoImg">Nascondi immagine</button>
-
-
-
-
-
+    <button @click="hideAndSeek()">Nascondi immagine e mostra testo</button>
+   
 
   </div>
-
-
 
 
   <script src="js/script.js"></script>
